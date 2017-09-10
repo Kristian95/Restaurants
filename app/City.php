@@ -19,4 +19,9 @@ class City extends Model
     {
         return $this->hasMany('App\District');
     }
+
+    public function restaurants()
+    {
+        return $this->hasMany('App\Restaurant');
+    }
 }

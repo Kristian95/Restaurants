@@ -14,4 +14,9 @@ class Category extends Model
     protected $fillable = [
         'name'
     ];
+
+    public function restaurants()
+    {
+        return $this->hasMany('App\Restaurant');
+    }
 }
