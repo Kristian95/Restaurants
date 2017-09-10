@@ -16,6 +16,18 @@
         </a>
     </div>
     <div class="col-md-4">
+        <a href="{{ route('admin.users.index') }}">
+            <div class="mini-stat clearfix">
+                <span class="mini-stat-icon green">
+                    <i class="fa fa-beer"></i>
+                </span>
+                <div class="mini-stat-info">
+                    <span>{{ trans('common.users') }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
         <a href="{{ route('admin.cities.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">

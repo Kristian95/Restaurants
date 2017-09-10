@@ -35,5 +35,6 @@ return [
     'districts'             => 'Квартали',
     'restaurants'           => 'Ресторанти',
     'restaurantCategory'    => 'Категория на ресторанта',
-    'cityType'              => 'Град на ресторанта'
+    'cityType'              => 'Град на ресторанта',
+    'users'                  => 'Потребители'
 ];

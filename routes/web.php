@@ -22,4 +22,5 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::resource('categories', 'CategoriesController');
     Route::resource('districts', 'DistrictsController');
     Route::resource('restaurants', 'RestaurantsController');
+    Route::resource('users', 'UsersController', ['only' => ['index', 'destroy']]);
 });

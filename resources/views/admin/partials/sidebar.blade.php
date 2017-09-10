@@ -10,6 +10,13 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('admin.users.index') }}"
+                       @if (request()->segment(2) === 'users') class="active" @endif >
+                        <i class="fa fa-dashboard"></i>
+                        {{ trans('common.users') }}
+                    </a>
+                </li>
+                <li>
                     <a href="{{ route('admin.cities.index') }}"
                        @if (request()->segment(2) === 'cities') class="active" @endif >
                         <i class="fa fa-dashboard"></i>
