@@ -36,6 +36,10 @@ return [
     'restaurants'           => 'Ресторанти',
     'restaurantCategory'    => 'Категория на ресторанта',
     'cityType'              => 'Избери град',
-    'productTypes'           => 'Видове продукти',
-    'users'                  => 'Потребители'
+    'productTypes'          => 'Видове продукти',
+    'users'                 => 'Потребители',
+    'products'              => 'Продукти',
+    'price'                 => 'Цена',
+    'sku'                   => 'Артикулен Номер',
+    'productType'           => 'Тип продукт',
 ];
