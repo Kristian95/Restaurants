@@ -59,7 +59,7 @@ class CitiesController extends Controller
     public function store(CityRequest $request)
     {
         $city = City::create($request->all());
-
+ 
         return redirect()->route('admin.cities.index')->with('success', trans('message.success.store'));
     }
 
