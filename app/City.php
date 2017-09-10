@@ -14,4 +14,9 @@ class City extends Model
     protected $fillable = [
         'name', 'description'
     ];
+
+    public function districts()
+    {
+        return $this->hasMany('App\District');
+    }
 }

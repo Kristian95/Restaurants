@@ -16,6 +16,13 @@
                         {{ trans('common.cities') }}
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.districts.index') }}"
+                       @if (request()->segment(2) === 'districts') class="active" @endif >
+                        <i class="fa fa-dashboard"></i>
+                        {{ trans('common.districts') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

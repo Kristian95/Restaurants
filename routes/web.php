@@ -17,5 +17,7 @@ Route::group(['namespace' => 'Auth'], function() {
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'is_admin']], function() {
     Route::get('',   ['as' => 'dashboard',   'uses' => 'DashboardController@index']);
+    
     Route::resource('cities', 'CitiesController');
+    Route::resource('districts', 'DistrictsController');
 });
