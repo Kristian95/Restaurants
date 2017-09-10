@@ -63,6 +63,18 @@
             </div>
         </a>
     </div>
+    <div class="col-md-4">
+        <a href="{{ route('admin.productTypes.index') }}">
+            <div class="mini-stat clearfix">
+                <span class="mini-stat-icon green">
+                    <i class="fa fa-glass"></i>
+                </span>
+                <div class="mini-stat-info">
+                    <span>{{ trans('common.productTypes') }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
 </div>
 
 @endsection

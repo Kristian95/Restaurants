@@ -44,6 +44,13 @@
                         {{ trans('common.restaurants') }}
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.productTypes.index') }}"
+                       @if (request()->segment(2) === 'productTypes') class="active" @endif >
+                        <i class="fa fa-beer"></i>
+                        {{ trans('common.productTypes') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
