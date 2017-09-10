@@ -14,6 +14,7 @@
                         <th>{{ trans('common.id') }}</th>
                         <th>{{ trans('common.name') }}</th>
                         <th>{{ trans('common.email') }}</th>
+                        <th>{{ trans('common.created_at') }}</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -22,6 +23,7 @@
                             <td>{{ $user->id }}</td>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
+                            <td>{{ $user->created_at }}</td>
                             <td>
                                 <a class="btn btn-sm btn-danger"
                                     href="#destroyModal" data-toggle="modal"
