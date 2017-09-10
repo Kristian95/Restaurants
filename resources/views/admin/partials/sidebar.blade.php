@@ -23,6 +23,13 @@
                         {{ trans('common.districts') }}
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.categories.index') }}"
+                       @if (request()->segment(2) === 'categories') class="active" @endif >
+                        <i class="fa fa-dashboard"></i>
+                        {{ trans('common.categories') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -19,5 +19,6 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::get('',   ['as' => 'dashboard',   'uses' => 'DashboardController@index']);
     
     Route::resource('cities', 'CitiesController');
+    Route::resource('categories', 'CategoriesController');
     Route::resource('districts', 'DistrictsController');
 });
