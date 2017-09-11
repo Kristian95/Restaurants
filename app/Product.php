@@ -20,7 +20,7 @@ class Product extends Model
         'product_type_id', 'name', 'price', 'sku', 'description', 'ext' 
     ];
 
-        public function productType()
+    public function productType()
     {
         return $this->belongsTo('App\ProductType');
     }

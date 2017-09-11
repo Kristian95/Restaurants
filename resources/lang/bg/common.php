@@ -46,4 +46,6 @@ return [
     'managers'              => 'Управители',
     'first_name'            => 'Име',
     'last_name'             => 'Фамилия',
+    'employees'             => 'Служители',
+    'position'              => 'Позиция',
 ];

@@ -14,4 +14,9 @@ class Manager extends Model
     {
         return $this->belongsTo('App\Restaurant');
     }
+
+    public function employees()
+    {
+        return $this->hasMany('App\Employee');
+    }
 }
