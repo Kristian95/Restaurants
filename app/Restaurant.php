@@ -25,8 +25,8 @@ class Restaurant extends Model
         return $this->belongsTo('App\Category');
     }
 
-    public function managers()
+    public function manager()
     {
-        return $this->hasMany('App\Manager');
+        return $this->hasOne('App\Manager');
     }
 }
