@@ -28,4 +28,5 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::resource('users', 'UsersController', ['only' => ['index', 'destroy']]);
     Route::resource('productTypes', 'ProductTypesController');
     Route::resource('products', 'ProductsController');
+    Route::resource('managers', 'ManagersController');
 });

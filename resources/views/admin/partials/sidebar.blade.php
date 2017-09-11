@@ -58,6 +58,13 @@
                         {{ trans('common.products') }}
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.managers.index') }}"
+                       @if (request()->segment(2) === 'managers') class="active" @endif >
+                        <i class="fa fa-beer"></i>
+                        {{ trans('common.managers') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
