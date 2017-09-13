@@ -17,7 +17,7 @@
                 {!! Form::open(['method' => 'POST', 'url' => route('admin.employees.store')]) !!}
                     @include('admin.partials.errors')
                     <div class="form-group">
-                        @include('admin.employees._form')
+                        @include('admin.employees.form')
                         {{ csrf_field() }}
                         <div class="clearfix"></div>
                     </div>

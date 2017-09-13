@@ -16,9 +16,9 @@
             <div class="panel-body">
                 @include('admin.partials.errors')
                 {!! Form::model($category, ['method' => 'PATCH',
-                'url' => route('admin.categories.update',
-                ['category' => $category])]) !!}
-                @include('admin.categories._form')
+                    'url' => route('admin.categories.update',
+                    ['category' => $category])]) !!}
+                @include('admin.categories.form')
                 {!! Form::close() !!}
             </div>
         </section>

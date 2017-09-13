@@ -2,7 +2,7 @@
     {!! Form::label('name', trans('common.name'),
     ['class' => 'control-label text-right col-sm-3']) !!}
     <div class="col-sm-9">
-        {!! Form::text('title', null, ['class' => 'form-control']) !!}
+        {!! Form::text('name', null, ['class' => 'form-control']) !!}
     </div>
     <div class="clearfix"></div>
 </div>
@@ -17,26 +17,8 @@
 </div>
 
 <div class="form-group">
-    <label class="control-label text-right col-sm-3">{{ trans('common.cityType') }}</label>
-    <div class="col-lg-6">
-       {!! Form::select('city_id', $cityType , null,
-    ['class' => 'form-control input-sm']) !!}
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="form-group">
-    <label class="control-label text-right col-sm-3">{{ trans('common.restaurantCategory') }}</label>
-    <div class="col-lg-6">
-       {!! Form::select('category_id', $restaurantCategories , null,
-    ['class' => 'form-control input-sm']) !!}
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="form-group">
     <div class="col-sm-9 col-sm-offset-3">
-        @if(isset($restaurant))
+        @if (isset($city))
             {!! Form::submit(trans('common.update'),
             ['class' => 'col-sm-12 btn btn-warning']) !!}
         @else

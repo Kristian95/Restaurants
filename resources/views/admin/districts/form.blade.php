@@ -18,7 +18,7 @@
 
 <div class="form-group">
     <div class="col-sm-9 col-sm-offset-3">
-        @if(isset($district))
+        @if (isset($district))
             {!! Form::submit(trans('common.update'),
             ['class' => 'col-sm-12 btn btn-warning']) !!}
         @else

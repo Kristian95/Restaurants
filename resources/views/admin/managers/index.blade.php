@@ -34,8 +34,7 @@
                                     title="{{ trans('common.edit') }}">
                                     <i class="fa fa-edit"></i>
                                 </a>
-                            </td>
-                            <td>
+
                                 <a class="btn btn-sm btn-danger"
                                     href="#destroyModal" data-toggle="modal"
                                     title="{{ trans('common.delete') }}"

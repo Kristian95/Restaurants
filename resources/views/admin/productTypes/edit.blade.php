@@ -15,10 +15,10 @@
             </header>
             <div class="panel-body">
                 @include('admin.partials.errors')
-                {!! Form::model($productType, ['method' => 'PATCH',
-                'url' => route('admin.productTypes.update',
-                ['productType' => $productType])]) !!}
-                @include('admin.productTypes._form')
+                    {!! Form::model($productType, ['method' => 'PATCH',
+                    'url' => route('admin.productTypes.update',
+                    ['productType' => $productType])]) !!}
+                @include('admin.productTypes.form')
                 {!! Form::close() !!}
             </div>
         </section>

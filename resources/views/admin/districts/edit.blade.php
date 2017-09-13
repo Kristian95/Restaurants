@@ -9,16 +9,16 @@
                 </h4>
                 <a class="pull-right btn btn-primary"
                     href="{{ route('admin.districts.index') }}">
-                    {{ trans('common.district') }}
+                    {{ trans('common.districts') }}
                 </a>
                 <div class="clearfix"></div>
             </header>
             <div class="panel-body">
                 @include('admin.partials.errors')
                 {!! Form::model($district, ['method' => 'PATCH',
-                'url' => route('admin.districts.update',
-                ['district' => $district])]) !!}
-                @include('admin.districts._form')
+                    'url' => route('admin.districts.update',
+                    ['district' => $district])]) !!}
+                @include('admin.districts.form')
                 {!! Form::close() !!}
             </div>
         </section>

@@ -16,9 +16,9 @@
             <div class="panel-body">
                 @include('admin.partials.errors')
                 {!! Form::model($product, ['method' => 'PATCH',
-                'url' => route('admin.products.update',
-                ['product' => $product]), 'files' => true]) !!}
-                @include('admin.products._form')
+                    'url' => route('admin.products.update',
+                    ['product' => $product]), 'files' => true]) !!}
+                @include('admin.products.form')
                 {!! Form::close() !!}
             </div>
         </section>

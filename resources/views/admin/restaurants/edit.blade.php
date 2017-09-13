@@ -16,9 +16,9 @@
             <div class="panel-body">
                 @include('admin.partials.errors')
                 {!! Form::model($restaurant, ['method' => 'PATCH',
-                'url' => route('admin.restaurants.update',
-                ['restaurant' => $restaurant])]) !!}
-                @include('admin.restaurants._form')
+                    'url' => route('admin.restaurants.update',
+                    ['restaurant' => $restaurant])]) !!}
+                @include('admin.restaurants.form')
                 {!! Form::close() !!}
             </div>
         </section>
