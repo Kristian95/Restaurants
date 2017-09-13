@@ -48,4 +48,5 @@ return [
     'last_name'             => 'Фамилия',
     'employees'             => 'Служители',
     'position'              => 'Позиция',
+    'phone'                 => 'Телефон',
 ];

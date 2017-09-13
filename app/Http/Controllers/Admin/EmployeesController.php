@@ -34,11 +34,11 @@ class EmployeesController extends Controller
      * @param  Advice $advice
      * @return \Illuminate\Http\Response
      */
-    public function edit(Manager $manager)
+    public function edit(Employee $employee)
     {
-        $managersList = Manger::pluck('last_name', 'id');
+        $managersList = Manager::pluck('last_name', 'id');
 
-        return view('admin.employees.edit', compact('manager', 'managersList'));
+        return view('admin.employees.edit', compact('employee', 'managersList'));
     }
 
     /**
