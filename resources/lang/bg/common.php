@@ -49,4 +49,6 @@ return [
     'employees'             => 'Служители',
     'position'              => 'Позиция',
     'phone'                 => 'Телефон',
+    'languages'             => 'Езици',
+    'code'                  => 'Код',
 ];

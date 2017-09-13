@@ -7,7 +7,7 @@
         <a href="{{ route('admin.restaurants.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-beer"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.restaurants') }}</span>
@@ -19,7 +19,7 @@
         <a href="{{ route('admin.users.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-beer"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.users') }}</span>
@@ -31,7 +31,7 @@
         <a href="{{ route('admin.cities.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-glass"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.cities') }}</span>
@@ -43,7 +43,7 @@
         <a href="{{ route('admin.categories.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-glass"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.categories') }}</span>
@@ -55,7 +55,7 @@
         <a href="{{ route('admin.districts.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-glass"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.districts') }}</span>
@@ -67,7 +67,7 @@
         <a href="{{ route('admin.productTypes.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-glass"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.productTypes') }}</span>
@@ -79,10 +79,22 @@
         <a href="{{ route('admin.products.index') }}">
             <div class="mini-stat clearfix">
                 <span class="mini-stat-icon green">
-                    <i class="fa fa-glass"></i>
+                    <i class="fa fa-circle"></i>
                 </span>
                 <div class="mini-stat-info">
                     <span>{{ trans('common.products') }}</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ route('admin.languages.index') }}">
+            <div class="mini-stat clearfix">
+                <span class="mini-stat-icon green">
+                    <i class="fa fa-circle"></i>
+                </span>
+                <div class="mini-stat-info">
+                    <span>{{ trans('common.languages') }}</span>
                 </div>
             </div>
         </a>

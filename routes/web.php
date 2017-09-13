@@ -30,4 +30,5 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::resource('products', 'ProductsController');
     Route::resource('managers', 'ManagersController');
     Route::resource('employees', 'EmployeesController');
+    Route::resource('languages', 'LanguagesController');
 });
