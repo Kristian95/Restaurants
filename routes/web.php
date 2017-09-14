@@ -21,14 +21,15 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     
     Route::get('',   ['as' => 'dashboard',   'uses' => 'DashboardController@index']);
     
-    Route::resource('cities', 'CitiesController');
-    Route::resource('categories', 'CategoriesController');
-    Route::resource('districts', 'DistrictsController');
-    Route::resource('restaurants', 'RestaurantsController');
-    Route::resource('users', 'UsersController', ['only' => ['index', 'destroy']]);
+    Route::resource('cities',       'CitiesController');
+    Route::resource('categories',   'CategoriesController');
+    Route::resource('districts',    'DistrictsController');
+    Route::resource('restaurants',  'RestaurantsController');
+    Route::resource('users',        'UsersController', ['only' => ['index', 'destroy']]);
     Route::resource('productTypes', 'ProductTypesController');
-    Route::resource('products', 'ProductsController');
-    Route::resource('managers', 'ManagersController');
-    Route::resource('employees', 'EmployeesController');
-    Route::resource('languages', 'LanguagesController');
+    Route::resource('products',     'ProductsController');
+    Route::resource('managers',     'ManagersController');
+    Route::resource('employees',    'EmployeesController');
+    Route::resource('languages',    'LanguagesController');
+    Route::resource('news',         'NewsController');
 });

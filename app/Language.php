@@ -14,4 +14,10 @@ class Language extends Model
     protected $fillable = [
     	'name', 'code', 'ext'
     ];
+
+    public function news()
+    {
+        return $this->belongsToMany(News::class)
+            ->withPivot(['title', 'text'])->withTimestamps();
+    }
 }

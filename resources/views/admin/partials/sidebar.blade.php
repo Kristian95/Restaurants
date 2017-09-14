@@ -79,6 +79,13 @@
                         {{ trans('common.languages') }}
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.news.index') }}"
+                       @if (request()->segment(2) === 'news') class="active" @endif >
+                        <i class="fa fa-circle"></i>
+                        {{ trans('common.news') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
