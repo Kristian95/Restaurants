@@ -32,4 +32,5 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'as' => 'admin.', 'mi
     Route::resource('employees',    'EmployeesController');
     Route::resource('languages',    'LanguagesController');
     Route::resource('news',         'NewsController');
+    Route::resource('tags',         'TagsController');
 });

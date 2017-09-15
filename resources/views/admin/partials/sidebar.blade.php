@@ -86,6 +86,13 @@
                         {{ trans('common.news') }}
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.tags.index') }}"
+                       @if (request()->segment(2) === 'tags') class="active" @endif >
+                        <i class="fa fa-circle"></i>
+                        {{ trans('common.tags') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
