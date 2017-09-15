@@ -5,6 +5,13 @@
 	</div>
 <div class="clearfix"></div>
 
+{!! Form::label('tags', trans('common.tags'),
+    ['class' => 'control-label text-right col-sm-3']) !!}
+<div class="col-sm-9">
+    {{ Form::select('tags[]', $tags, null, ['multiple' => 'multiple']) }}
+</div>
+<div class="clearfix"></div>
+
 <div>
     <h3>{{ trans('common.news') }}</h3>
     <ul class="nav nav-tabs">
@@ -44,5 +51,15 @@
         @endforeach
     </div>
 </div>
-{!! Form::submit('Submit', array('class' => 'btn btn-info')); !!}
+
+<div class="form-group">
+    <div class="col-sm-9 col-sm-offset-3">
+        @if (isset($news))
+            {!! Form::submit(trans('common.update'),
+            ['class' => 'col-sm-12 btn btn-warning']) !!}
+        @else
+            {!! Form::submit(trans('common.store'),
+            ['class' => 'col-sm-12 btn btn-success']) !!}
+        @endif
+    </div>
 <div class="clearfix"></div>

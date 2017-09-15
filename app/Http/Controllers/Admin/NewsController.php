@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\NewsRequest;
 use App\News;
 use App\Language;
+use App\Tag;
 
 class NewsController extends Controller
 {
@@ -30,7 +31,9 @@ class NewsController extends Controller
     {
         $languages = Language::all();
 
-        return view('admin.news.create', compact('languages'));
+        $tags = Tag::pluck('name', 'id');
+
+        return view('admin.news.create', compact('languages', 'tags'));
     }
 
     /**
@@ -43,7 +46,13 @@ class NewsController extends Controller
     {
         $news = News::create($request->all());
 
-        $news->languages()->attach($request->input('languages', []));
+        if ($request->has('tags')) {
+            $news->tags()->sync($request->input('tags', []));
+        }
+
+        if ($request->has('languages')) {
+            $news->languages()->sync($request->input('languages', []));
+        }
 
         return redirect()->route('admin.news.index');
     }
@@ -63,7 +72,9 @@ class NewsController extends Controller
             $newsLanguageData[$language->id] = $language;
         }
 
-        return view('admin.news.edit', compact('news', 'languages', 'languages', 'newsLanguageData'));
+        $tags  = Tag::pluck('name', 'id');
+
+        return view('admin.news.edit', compact('news', 'languages', 'newsLanguageData', 'tags'));
     }
 
     /**
@@ -77,7 +88,13 @@ class NewsController extends Controller
     {
         $news->update($request->all());
 
-        $news->languages()->sync($request->input('languages', []));
+        if ($request->has('tags')) {
+            $news->tags()->sync($request->input('tags', []));
+        }
+
+        if ($request->has('languages')) {
+            $news->languages()->sync($request->input('languages', []));
+        }
 
         return redirect()->route('admin.news.index');
     }
