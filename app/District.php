@@ -19,7 +19,8 @@ class District extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'city_id',
+        'name', 
+        'city_id',
     ];
 
     public function city()

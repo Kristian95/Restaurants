@@ -12,7 +12,11 @@ class Restaurant extends Model
      * @var array
      */
     protected $fillable = [
-        'category_id', 'city_id', 'title', 'description', 'mediumtext'  
+        'category_id', 
+        'city_id', 
+        'title', 
+        'description', 
+        'mediumtext'  
     ];
 
     public function city()

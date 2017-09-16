@@ -12,7 +12,11 @@ class Employee extends Model
      * @var array
      */
     protected $fillable = [
-        'manager_id', 'first_name', 'last_name', 'position', 'phone'  
+        'manager_id', 
+        'first_name', 
+        'last_name', 
+        'position', 
+        'phone'  
     ];
 
     public function manager()

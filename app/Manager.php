@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Manager extends Model
 {
     protected $fillable = [
-        'restaurant_id', 'first_name', 'last_name'
+        'restaurant_id', 
+        'first_name', 
+        'last_name'
     ];
 
     public function restaurant()

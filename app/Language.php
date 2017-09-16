@@ -12,7 +12,9 @@ class Language extends Model
     public static $filepath = 'uploads/images/languages';
 
     protected $fillable = [
-    	'name', 'code', 'ext'
+    	'name', 
+        'code', 
+        'ext'
     ];
 
     public function news()
